@@ -1,6 +1,9 @@
 const express = require('express')
+const cors = require('cors')
 const data = require('./data/cohorts')
 const app = express()
+
+app.use(cors())
 
 function findById (data, id) {
     for (i = 0; i < data.length; i++) {
