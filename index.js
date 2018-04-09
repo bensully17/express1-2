@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const data = require('./data/cohorts')
 const app = express()
+const port = process.env.PORT || 3060
 
 app.use(cors())
 
@@ -13,8 +14,8 @@ function findById (data, id) {
     } 
 }
 
-app.listen(3060, () => {
-    console.log(`Listening on port 3060`)
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
 })
 
 app.get('/', (req, res, next) => {
