@@ -8,7 +8,7 @@ app.use(cors())
 
 function findById (data, id) {
     for (i = 0; i < data.length; i++) {
-        if (data[i].ID == id) {
+        if (data[i].id == id) {
             return data[i]
         }
     } 
