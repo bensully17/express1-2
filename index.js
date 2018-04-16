@@ -14,9 +14,7 @@ function findById (data, id) {
     } 
 }
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`)
-})
+app.listen(port)
 
 app.get('/', (req, res, next) => {
     res.json({data})
